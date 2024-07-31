@@ -1,0 +1,12 @@
+First plan is:
+0: grasp red cube
+1: move red cube to location 2_B
+2: grasp blue cube
+3: move blue cube to location 2_A
+4: grasp black cube
+5: move black cube to location 2_C
+6: grasp green cube
+7: move green cube to location 1_B
+8: grasp orange cube
+9: move orange cube to location 3_B
+10: return to base

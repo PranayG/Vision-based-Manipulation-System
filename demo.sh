@@ -1,0 +1,1 @@
+python experiment.py --checkpoint_path log/checkpoint_detection.tar --debug

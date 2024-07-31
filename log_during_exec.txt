@@ -1,0 +1,83 @@
+###Body LLM Start###
+Body llm input:grasp red cube
+Body llm output:<rob0> [grasp] <red_cube>
+Body llm output after parser:
+[([0.43, 0.43, 0.3], 15.0, 'no change'), ([0.43, 0.43, 0.01], 5.0, 'close'), ([0.43, 0.43, 0.3], 5.0, 'no change')]
+###Body LLM End###
+###Body LLM Start###
+Body llm input:move red cube to location 2_B
+Body llm output:<rob0> [put] <red_cube> <location_2_B>
+Body llm output after parser:
+[([0.3, -0.43, 0.3], 15.0, 'no change'), ([0.3, -0.43, 0.01], 5.0, 'open'), ([0.3, -0.43, 0.3], 5.0, 'no change')]
+###Body LLM End###
+###Body LLM Start###
+Body llm input:grasp blue cube
+Body llm output:<rob0> [grasp] <blue_cube>
+Body llm output after parser:
+[([0.3, 0.56, 0.3], 15.0, 'no change'), ([0.3, 0.56, 0.01], 5.0, 'close'), ([0.3, 0.56, 0.3], 5.0, 'no change')]
+###Body LLM End###
+###Body LLM Start###
+Body llm input:move blue cube to location 2_A
+Body llm output:<rob0> [put] <blue_cube> <location_2_A>
+Body llm output after parser:
+[([0.3, -0.3, 0.3], 15.0, 'no change'), ([0.3, -0.3, 0.01], 5.0, 'open'), ([0.3, -0.3, 0.3], 5.0, 'no change')]
+###Body LLM End###
+###Body LLM Start###
+Body llm input:grasp black cube
+Body llm output:<rob0> [grasp] <black_cube>
+Body llm output after parser:
+<black_cube> is out of the workspace of the robot.
+###Body LLM End###
+Plan after feedback, feedback step=4, feedback:<black_cube> is out of the workspace of the robot.
+Plan before this step: ['grasp red cube', 'move red cube to location 2_B', 'grasp blue cube', 'move blue cube to location 2_A', 'grasp black cube', 'move black cube to location 2_C', 'grasp green cube', 'move green cube to location 1_B', 'grasp orange cube', 'move orange cube to location 3_B', 'return to base']
+New plan:
+4: grasp yellow cube
+5: move yellow cube to location 2_C
+6: grasp green cube
+7: move green cube to location 1_B
+8: grasp orange cube
+9: move orange cube to location 3_B
+10: return to base
+#####Brain LLM End#####
+###Body LLM Start###
+Body llm input:grasp yellow cube
+Body llm output:<rob0> [grasp] <yellow_cube>
+Body llm output after parser:
+[([0.43, 0.3, 0.3], 15.0, 'no change'), ([0.43, 0.3, 0.01], 5.0, 'close'), ([0.43, 0.3, 0.3], 5.0, 'no change')]
+###Body LLM End###
+###Body LLM Start###
+Body llm input:move yellow cube to location 2_C
+Body llm output:<rob0> [put] <yellow_cube> <location_2_C>
+Body llm output after parser:
+[([0.3, -0.56, 0.3], 15.0, 'no change'), ([0.3, -0.56, 0.01], 5.0, 'open'), ([0.3, -0.56, 0.3], 5.0, 'no change')]
+###Body LLM End###
+###Body LLM Start###
+Body llm input:grasp green cube
+Body llm output:<rob0> [grasp] <green_cube>
+Body llm output after parser:
+[([0.43, 0.2, 0.3], 15.0, 'no change'), ([0.43, 0.2, 0.01], 5.0, 'close'), ([0.43, 0.2, 0.3], 5.0, 'no change')]
+###Body LLM End###
+###Body LLM Start###
+Body llm input:move green cube to location 1_B
+Body llm output:<rob0> [put] <green_cube> <location_1_B>
+Body llm output after parser:
+[([0.43, -0.43, 0.3], 15.0, 'no change'), ([0.43, -0.43, 0.01], 5.0, 'open'), ([0.43, -0.43, 0.3], 5.0, 'no change')]
+###Body LLM End###
+###Body LLM Start###
+Body llm input:grasp orange cube
+Body llm output:<rob0> [grasp] <orange_cube>
+Body llm output after parser:
+[([0.3, 0.43, 0.3], 15.0, 'no change'), ([0.3, 0.43, 0.01], 5.0, 'close'), ([0.3, 0.43, 0.3], 5.0, 'no change')]
+###Body LLM End###
+###Body LLM Start###
+Body llm input:move orange cube to location 3_B
+Body llm output:<rob0> [put] <orange_cube> <location_3_B>
+Body llm output after parser:
+[([0.17, -0.43, 0.3], 15.0, 'no change'), ([0.17, -0.43, 0.01], 5.0, 'open'), ([0.17, -0.43, 0.3], 5.0, 'no change')]
+###Body LLM End###
+###Body LLM Start###
+Body llm input:return to base
+Body llm output:<rob0> [return_base]
+Body llm output after parser:
+[([0.3, 0.0, 0.5], 10.0, 'no change')]
+###Body LLM End###
